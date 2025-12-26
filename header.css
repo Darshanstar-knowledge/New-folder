@@ -1,0 +1,163 @@
+.section-header {
+    width: 100%;
+    height: 150vh; /* Full screen height */
+    position: relative;
+     
+   
+}
+
+.bg-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150vh;
+    z-index: -2;
+}
+
+.video-bg {
+    position: absolute;
+    width: 100%;
+    height: 130vh;
+    object-fit: cover;
+    
+    
+}
+
+.img-overlay{
+    position: absolute;
+  
+  bottom: -10%;
+    
+    left: 0;
+
+    
+}
+
+.nav-custum-logo{
+    font-size: clamp(14px,1.5vw,20px);
+    letter-spacing: 7px;
+    font-weight: 700;
+    font-family: montserrat, sans-serif;
+}
+
+.navbar{
+    padding: 30px 100px !important;
+}
+
+.navigation-header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    
+}
+
+.nav-link{
+ font-family: montserrat, sans-serif;
+ letter-spacing: 1px;
+ font-size: 16px;
+ font-weight: 500;
+}
+
+.nav-button{
+    font-family: montserrat, sans-serif;
+    
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+
+@media (max-width : 991.98px) {
+
+.bg-container{
+    height: 100vh;
+}
+
+.video-bg{
+    height: 100vh;
+}
+
+
+
+.section-header{
+    height: 100vh;
+}
+
+    .navbar{
+        padding: 20px 30px !important;
+        
+        
+    }
+    #navbarSupportedContent.collapse.show{
+        
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+     top: 0;
+     left: 0;
+     background-color: white;
+     z-index: 3;
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     align-items: center;
+     padding-top: 150px !important;
+     
+    
+
+    }
+    .nav-link{
+        font-size: 20px;
+        text-align: center;
+        font-weight: 500;
+    }
+
+
+
+    .navbar-toggler[aria-expanded="true"] .fa-times{
+        display: block !important;
+        z-index: 4;
+        opacity: 1;
+        position: absolute;
+        right: 10%;
+        top: 50%;
+  
+    }
+
+    .navbar-nav{
+        border: none;
+        width: 100%;
+    }
+
+
+}
+
+
+.hero-section{
+
+    height: 50vh;
+}
+.hero-heading h1{
+    font-size:clamp(26px,4.8vw, 66px);
+    letter-spacing: 4px;
+    font-family: montserrat, sans-serif;
+    font-weight: 400;
+    text-align: center;
+    width: clamp(180px,60vw,900px);
+    line-height: clamp(42px,7.5vw,96px);
+    
+}
+
+.hero-content p{
+    font-size: clamp(14px,1.9vw,24px);
+    font-family: montserrat, sans-serif;
+    letter-spacing: 1px;
+    font-weight: 500;
+    line-height:  clamp(24px,3.1vw,43px);
+    text-align: center;
+    width: clamp(250px,60vw,900px);
+
+}
+
+

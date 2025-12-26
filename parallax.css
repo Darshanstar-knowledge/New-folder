@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.parallax {
+    /* The image used - replace with your own image URL */
+    background-image: url("https://static.wixstatic.com/media/c837a6_870aaf57c1d9484a9a6ee57f2465df75~mv2.jpg/v1/fill/w_1351,h_880,al_r,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_870aaf57c1d9484a9a6ee57f2465df75~mv2.jpg");
+
+    /* Set a specific height */
+
+
+
+    /* Create the parallax scrolling effect */
+  height: 130vh; /* Makes it full screen height */
+  background-attachment: fixed; /* The core parallax effect */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents tiling */
+  background-size: cover;
+
+  font-family: "montserrat", sans-serif;
+}
+
+
+
+.parallax-main-content-wrapper {
+    width: clamp(200px,25.1vw,340px);
+}
+
+.parallax-wh-border{
+    
+    min-width: 2px ;
+    min-height: 100%;
+}
+
+.parallax-wh-border-thick{
+    min-width: 4px;
+    max-height: 20%;
+    z-index: 3;
+}
+
+
+
+.parallax-head-text  h3{
+ letter-spacing: 2px;
+ font-size: clamp(11px,1.05vw,14px);
+}
+
+
+.parallax-main-head-text p{
+    font-size: clamp(18px,1.9vw,24px);
+    line-height: 42px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.parallax-para p{
+    font-size: clamp(12px,1.2vw,16px);
+    line-height: 26px;
+    letter-spacing: 0.5px;
+}
+

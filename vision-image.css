@@ -1,0 +1,23 @@
+
+.vision{
+    font-family: "montserrat", sans-serif;
+}
+
+.vision-head-text h3{
+letter-spacing: 2px;
+ font-size: clamp(12px,1.05vw,14px);
+ font-weight: 200;
+}
+
+.vision-main-head-text p{
+font-size: clamp(18px,1.9vw,24px);
+    line-height: 42px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.vision-para p{
+ font-size: clamp(12px,1.2vw,16px);
+    line-height: 28px;
+    letter-spacing: 0.5px;
+}

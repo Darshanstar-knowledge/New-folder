@@ -1,0 +1,30 @@
+.careers-carousel-wh-border{
+    
+    min-width: 2px ;
+    min-height: 100%;
+}
+
+.careers-carousel-wh-border-thick{
+    min-width: 4px;
+    max-height: 20%;
+    z-index: 3;
+}
+
+.careers-carousel-head-text  h3{
+ letter-spacing: 2px;
+ font-size: clamp(11px,1.05vw,14px);
+}
+
+
+.careers-carousel-main-head-text p{
+    font-size: clamp(18px,1.9vw,24px);
+    line-height: 42px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.careers-carousel-para p{
+    font-size: clamp(12px,1.2vw,16px);
+    line-height: 26px;
+    letter-spacing: 0.5px;
+}
