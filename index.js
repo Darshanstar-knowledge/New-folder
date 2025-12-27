@@ -1,16 +1,11 @@
-// $('.cards-carousel').slick();
-
-
-
-
-$('.cards-carousel').slick({
-    arrows:false,
-    infinite: true,
-    autoplay:true,
-    speed: 300,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    centerMode: true,
-   
-    dots:true,
-  });
+  $(document).ready(function () {
+            $('.your-class').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 1,
+                adaptiveHeight: true,
+                autoplay: true,
+                arrows: false
+            });
+        });

@@ -1,855 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-
+ 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
-
-   
-
-
-
-
-
+    <title>Slick Slider Bootstrap 5</title>
+ 
+    <!-- 1. Correct Bootstrap CSS Link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-
-
-
-
-
-     <!-- 2. Slick Slider CSS -->
+ 
+ 
+    <!-- 2. Slick Slider CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
-
-
-
-    <link rel="stylesheet" href="parallax.css">
-
-    <link rel="stylesheet" href="AutonoInNumbers.css">
-    
-    <link rel="stylesheet" href="./industry-logo.css">
-
-    <link rel="stylesheet" href="careers-carousel.css">
-
-    <link rel="stylesheet" href="./grid.css">
-
-    <link rel="stylesheet" href="./footer1.css">
-
-    <link rel="stylesheet" href="./header.css">
-
-    <link rel="stylesheet" href="./vision-image.css">
-
-    <!-- <link rel="stylesheet" href="./cc.css"> -->
-
+ 
     <style>
-        * {
-            margin: 0px !important;
-            padding: 0px !important;
+        .your-class {
+            margin-bottom: 50px;
+        }
+ 
+        .your-class .slick-dots {
+            color: white;
+            text-align: left !important;
+            padding-left: 0;
+            bottom: -35px;
+            left: 30%;
+            width: auto;
+        }
+ 
+        .your-class img {
+            width: 100%;
+            border-radius: 8px;
+        }
+ 
+        .slider-section {
+            padding: 20px 0;
+        }
+ 
+        .main-wrapper {
+            width: 420px;
+            height: 540px;
+        }
+ 
+        .carousel-border {
+            min-width: 2px;
+            min-height: 100%;
+            background-color: rgba(255, 255, 255, 0.734);
+            margin: 0px 20px;
+        }
+ 
+        .slick-dots li button:before {
+            display: none;
+        }
+       
+        .slick-dots li button {
+            background-color: rgba(159, 156, 156, 0.665);
+            width: 2px;
+            height: 2px;
+            border-radius: 50%;
+           
+        }
+       
+        .slick-dots li.slick-active button {
+            background-color: rgb(255, 255, 255);
         }
     </style>
-
-
- <!-- Optional: Bootstrap + FontAwesome for styling -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-
-
 </head>
-
+ 
 <body>
-
-
-
-
-
-    <section class="section-header">
-
-
-        <div class="bg-container">
-
-
-            <video autoplay muted loop playsinline class="position-relative top-0 start-0 w-100 video-bg">
-                <source
-                    src="https://video.wixstatic.com/video/c837a6_02de7d4c43d44b7b890854049ed75da8/1080p/mp4/file.mp4"
-                    type="video/mp4" class="w-100">
-            </video>
-
-
-
-            <img src="https://static.wixstatic.com/media/84770f_3ebbf7ac3e26427b83ca50c82aabaaf8~mv2.png/v1/fill/w_1351,h_600,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/84770f_3ebbf7ac3e26427b83ca50c82aabaaf8~mv2.png"
-                alt="" class="img-fluid img-overlay w-100">
-
-
-        </div>
-
-        <section class="navigation-header">
-
-            <nav class="navbar navbar-expand-lg  py-lg-4 px-lg-5">
-                <div class="container-fluid">
-
-
-                    <a class="navbar-brand nav-custum-logo order-0" href="#">AUTONO</a>
-
-
-                    <button class="navbar-toggler border-0 shadow-none  overflow-hidden order-2 order-lg-1"
-                        type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-
-                        <i class="fas fa-bars d-block fs-3"></i>
-                        <i class="fas fa-times d-none"></i>
-                    </button>
-
-
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 px-4 d-flex gap-4">
-                            <li class="nav-item ">
-                                <a class="nav-link " aria-current="page" href="#">Technology</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Careers</a>
-                            </li>
-                        </ul>
-
-
-                    </div>
-
-                    <a href="#"
-                        class="nav-button text-decoration-none text-white bg-black px-3 py-1 rounded-2 order-1 order-lg-2">Subscribe
-                    </a>
-                </div>
-            </nav>
-
-
-
-        </section>
-
-
-        <div class="hero-section d-flex flex-column gap-3 align-items-center justify-content-center">
-
-
-            <div class="hero-heading text-black">
-                <h1>
-                    THE FUTURE OF <br>
-                    MOBILITY IS HERE
-                </h1>
-            </div>
-
-
-            <div class="hero-content">
-                <p>
-                    Discover the safest self-driving experience with Autono.
-                </p>
-            </div>
-
-        </div>
-
-
-
-    </section>
-
-
-
-
-
-
-    <section class="vision">
-        <div class="container-fluid text-white bg-black">
-            <div class="row">
-
-
-                <div class="col-md-5 Number-stats-section d-flex align-items-center justify-content-center  ">
-
-                    <div class=" grid-white-box   pe-lg-3 py-5  d-flex gap-3 gap-md-5 ">
-
-
-
-                        <div class="parallax-black-box   pe-lg-3 py-5 bg-black d-flex gap-3 gap-md-5 ">
-
-
-                            <div class="parallax-wh-border bg-secondary ms-5 me-1 me-md-3">
-
-                            </div>
-
-
-                            <!-- <div class="parallax-wh-border-thick bg-white ms-5 me-1 me-md-3">
-                            
-                        </div> -->
-
-
-                            <div class="parallax-main-content-wrapper text-white d-flex flex-column gap-3 gap-md-5">
-
-                                <div class="vision-head-text">
-                                    <h3>VISION</h3>
-                                </div>
-
-
-
-                                <div class="vision-main-head-text">
-                                    <p>We’re Changing the Way the World Thinks About Cars</p>
-                                </div>
-
-
-                                <div class="vision-para">
-                                    <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just
-                                        click
-                                        “Edit Text” or double click me to add your own content and make changes to the
-                                        font.
-                                        I’m a great place for you to tell a story and let your users know a little more
-                                        about you.</p>
-                                </div>
-
-
-                            </div>
-
-
-                        </div>
-
-
-
-                    </div>
-
-                </div>
-
-                <div class="col-md-7 grid-image-section ">
-                    <img src="https://static.wixstatic.com/media/c837a6_ea5eeb99f72d42b0a22f459e01bfd33c~mv2.jpg/v1/fill/w_811,h_840,al_l,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_ea5eeb99f72d42b0a22f459e01bfd33c~mv2.jpg"
-                        alt="" class="img-fluid">
-                </div>
-
-
-            </div>
-
-        </div>
-    </section>
-
-
-    <section class="grid-container">
-
-
-        <div class="container-fluid bg-white text-black">
-
-
-            <div class="row py-5">
-
-
-                <div class="col-md-6 Number-stats-section d-flex align-items-center justify-content-md-center  ">
-
-                    <div class="parallax-black-box  pe-0 pe-lg-3 py-5 bg-white rounded-4 d-flex gap-3 gap-md-5 ">
-
-
-                        <div class="parallax-wh-border bg-secondary ms-3 ms-lg-0 me-1 me-md-3">
-
-                        </div>
-
-
-                        <!-- <div class="parallax-wh-border-thick bg-white ms-5 me-1 me-md-3">
-                            
-                        </div> -->
-
-
-                        <div class="grid-main-service-content-wrapper text-black d-flex flex-column gap-3 gap-md-5">
-
-                            <div class="grid-services-text text-secondary">
-                                <h3>SERVICES</h3>
-                            </div>
-
-
-
-                            <div class="grid-main-head-text">
-                                <p>We Deliver Exceptional Products and Services Around the World
-                                <p>
-                            </div>
-
-
-
-
-
-                        </div>
-
-
-                    </div>
-
-
-
-
-
-                </div>
-
-
-                <div class="col-md-6  d-flex align-items-center justify-content-center ">
-
-
-
-
-
-
-                </div>
-
-
-            </div>
-
-
-            <div class="row">
-
-
-
-
-
-
-                <div class="col-md-6 Number-stats-section d-flex align-items-center justify-content-center  ">
-
-                    <div class=" grid-white-box  pe-5 pe-lg-3 py-5  d-flex gap-3 gap-md-5 ">
-
-
-
-
-
-                        <div class="grid-main-content-wrapper text-black d-flex flex-column gap-4 gap-md-5">
-
-                            <div class="grid-head-text">
-                                <h3>AUTONOMOUS
-                                    DRIVING</h3>
-                            </div>
-
-
-
-
-
-
-                            <div class="grid-para">
-                                <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click
-                                    “Edit Text” or double click me to add your own content and make changes to the font.
-                                    I’m a great place for you to tell a story and let your users know a little more
-                                    about you.</p>
-                            </div>
-
-
-                            <div class="parallax-button">
-                                <a href=" " class="text-decoration-none text-black ">
-                                    <span
-                                        class="parallax-read-more border border-1 border-black rounded-start-2 p-2">Read
-                                        More </span>
-                                    <span class="border border-1 border-black rounded-end-2 p-2"><i
-                                            class="fas fa-arrow-right"></i></span>
-                                </a>
-                            </div>
-
-
-                        </div>
-
-
-                    </div>
-
-
-
-
-
-                </div>
-
-                <div class="col-md-6 grid-image-section ">
-                    <img src="https://static.wixstatic.com/media/84770f_3cc097e7503b4ed498e350c6618ef956~mv2.jpg/v1/fill/w_676,h_680,al_l,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/84770f_3cc097e7503b4ed498e350c6618ef956~mv2.jpg"
-                        alt="" class="img-fluid">
-                </div>
-
-
-            </div>
-
-
-            <div class="row">
-
-
-                <div class="col-md-6 order-2 order-md-0 Number-image-section ">
-                    <img src="https://static.wixstatic.com/media/84770f_abca8ce0bac24971a57d1f9d40b8238b~mv2.jpg/v1/fill/w_676,h_680,al_r,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/84770f_abca8ce0bac24971a57d1f9d40b8238b~mv2.jpg"
-                        alt="" class="img-fluid">
-                </div>
-
-
-
-                <div
-                    class="col-md-6 order-0 order-md-2 Number-stats-section d-flex align-items-center justify-content-center  ">
-
-                    <div class=" grid-white-box  pe-5 pe-lg-3 py-5  d-flex gap-3 gap-md-5 ">
-
-
-
-
-
-                        <div class="grid-main-content-wrapper text-black d-flex flex-column gap-4 gap-md-5">
-
-                            <div class="grid-head-text">
-                                <h3>REAL-TIME INFORMATION</h3>
-                            </div>
-
-
-
-
-
-
-                            <div class="grid-para">
-                                <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click
-                                    “Edit Text” or double click me to add your own content and make changes to the font.
-                                    I’m a great place for you to tell a story and let your users know a little more
-                                    about you.</p>
-                            </div>
-
-
-                            <div class="parallax-button">
-                                <a href=" " class="text-decoration-none text-black ">
-                                    <span
-                                        class="parallax-read-more border border-1 border-black rounded-start-2 p-2">Read
-                                        More </span>
-                                    <span class="border border-1 border-black rounded-end-2 p-2"><i
-                                            class="fas fa-arrow-right"></i></span>
-                                </a>
-                            </div>
-
-
-                        </div>
-
-
-                    </div>
-
-
-
-
-
-                </div>
-
-
-            </div>
-
-
-            <div class="row">
-
-
-
-
-
-
-                <div class="col-md-6 Number-stats-section d-flex align-items-center justify-content-center  ">
-
-                    <div class=" grid-white-box  pe-5 pe-lg-3 py-5  d-flex gap-3 gap-md-5 ">
-
-
-
-
-
-                        <div class="grid-main-content-wrapper text-black d-flex flex-column gap-4 gap-md-5">
-
-                            <div class="grid-head-text">
-                                <h3>
-                                    PERCEPTION ENABLED</h3>
-                            </div>
-
-
-
-
-
-
-                            <div class="grid-para">
-                                <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click
-                                    “Edit Text” or double click me to add your own content and make changes to the font.
-                                    I’m a great place for you to tell a story and let your users know a little more
-                                    about you.</p>
-                            </div>
-
-
-                            <div class="parallax-button">
-                                <a href=" " class="text-decoration-none text-black ">
-                                    <span
-                                        class="parallax-read-more border border-1 border-black rounded-start-2 p-2">Read
-                                        More </span>
-                                    <span class="border border-1 border-black rounded-end-2 p-2"><i
-                                            class="fas fa-arrow-right"></i></span>
-                                </a>
-                            </div>
-
-
-                        </div>
-
-
-                    </div>
-
-
-
-
-
-                </div>
-
-                <div class="col-md-6 Number-image-section ">
-                    <img src="https://static.wixstatic.com/media/c837a6_305ff8a7722a479ab58f1d4f2729586e~mv2.jpg/v1/fill/w_676,h_680,al_l,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_305ff8a7722a479ab58f1d4f2729586e~mv2.jpg"
-                        alt="" class="img-fluid">
-                </div>
-
-
-            </div>
-
-
-        </div>
-
-
-    </section>
-
-
-
-    <section class="parallax w-100 d-flex justify-content-center align-items-center">
-
-        <div class="container ">
-            <div class="row ">
-
-
-
-                <div
-                    class=" col-11 col-md-7 offset-1 col-lg-6  offset-lg-0 d-flex justify-content-center align-items-center ">
-
-                    <div class="parallax-black-box  pe-5 pe-lg-3 py-5 bg-black rounded-4 d-flex gap-3 gap-md-5 ">
-
-
-                        <div class="parallax-wh-border bg-secondary ms-5 me-1 me-md-3">
-
-                        </div>
-
-
-                        <!-- <div class="parallax-wh-border-thick bg-white ms-5 me-1 me-md-3">
-                            
-                        </div> -->
-
-
-                        <div class="parallax-main-content-wrapper text-white d-flex flex-column gap-3 gap-md-5">
-
-                            <div class="parallax-head-text">
-                                <h3>WHY AUTONO</h3>
-                            </div>
-
-
-
-                            <div class="parallax-main-head-text">
-                                <p>A different approach, using a new method of manufacturing.</p>
-                            </div>
-
-
-                            <div class="parallax-para">
-                                <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click
-                                    “Edit Text” or double click me to add your own content and make changes to the font.
-                                    I’m a great place for you to tell a story and let your users know a little more
-                                    about you.</p>
-                            </div>
-
-
-                            <div class="parallax-button">
-                                <a href=" " class="text-decoration-none text-white ">
-                                    <span
-                                        class="parallax-read-more border border-1 border-white rounded-start-2 p-2">Read
-                                        More </span>
-                                    <span class="border border-1 border-white rounded-end-2 p-2"><i
-                                            class="fas fa-arrow-right"></i></span>
-                                </a>
-                            </div>
-
-
-                        </div>
-
-
-                    </div>
-
-                </div>
-
-
-                <div class="col-md-6 col-10 offset-1 col-lg-6  offset-lg-0 ">
-
-                </div>
-
-
-
-            </div>
-        </div>
-
-
-
-    </section>
-
-
-
-
-
-
-    <section class="Autono-In-Numbers">
-
-
-        <div class="container-fluid">
-
-
-            <div class="row">
-
-
-                <div class="col-md-6 order-2 order-md-0 Number-image-section ">
-                    <img src="https://static.wixstatic.com/media/c837a6_3a4f054db4424af1b034f96ddd7b691a~mv2.jpg/v1/fill/w_676,h_760,al_r,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_3a4f054db4424af1b034f96ddd7b691a~mv2.jpg"
-                        class="img-fluid" alt="">
-                </div>
-
-                <div class="col-md-1 order-0 order-md-1 pt-5 pt-md-0"></div>
-
-                <div
-                    class="col-md-5  order-1 order-md-2 Number-stats-section d-flex justify-content-md-start justify-content-center align-items-center">
-
-                    <div class="numbers-right-wrapper d-flex flex-column  ">
-
-                        <div class="Autono-In-Numbers-heading">
-                            <p>
-                                Autono In Numbers
-                            </p>
-                        </div>
-
-                        <div class="Autono-In-Numbers-first-row d-flex gap-6">
-
-                            <div class="col-5 Autono-In-Numbers-stats-top w-65">
-
-
-                                <div class=" Autono-In-Numbers-stat-number ">
-                                    <p><span>2</span>00</p>
-                                </div>
-
-
-                                <div class="Autono-In-Numbers-stat-content">
-                                    <p>EMPLOYEES</p>
-                                </div>
-
-                            </div>
-
-
-                            <div class="col-5 Autono-In-Numbers-stats-bottom w-65">
-                                <div class=" Autono-In-Numbers-stat-number ">
-                                    <p><span>5</span></p>
-                                </div>
-
-
-                                <div class="Autono-In-Numbers-stat-content">
-                                    <p>CORE TEAMS</p>
-                                </div>
-                            </div>
-
-
-                        </div>
-
-                        <div class="Autono-In-Numbers-second-row d-flex gap-6">
-
-                            <div class=" col-5 Autono-In-Numbers-stats-top w-65">
-
-                                <div class="Autono-In-Numbers-stat-number ">
-                                    <p><span>2</span>00M$</p>
-                                </div>
-
-                                <div class="Autono-In-Numbers-stat-content">
-                                    <p>CAPITAL</p>
-                                </div>
-
-
-
-                            </div>
-
-
-                            <div class="col-5 Autono-In-Numbers-stats-top w-65">
-                                <div class=" Autono-In-Numbers-stat-number ">
-                                    <p><span>3</span>26</p>
-                                </div>
-
-
-                                <div class="Autono-In-Numbers-stat-content">
-                                    <p>PARTNERS</p>
-                                </div>
-                            </div>
-
-                        </div>
-
-
-
-                    </div>
-
-
-                </div>
-
-
-            </div>
-
-
-        </div>
-
-
-    </section>
-
-
-
-
-
-    <section class="industry-logo py-5 bg-black">
-        <div class="container-fluid bg-black text-white">
-
-
-            <div class="row">
-
-
-                <div class="col-md-6 industry-content ">
-                    <div class="  pe-5 pe-lg-3 py-5  rounded-4 d-flex gap-3 gap-md-5 ">
-
-
-                        <div class="industry-wh-border bg-secondary ms-5 me-1 me-md-3">
-
-                        </div>
-
-
-                        <!-- <div class="industry-wh-border-thick bg-white ms-5 me-1 me-md-3">
-                            
-                        </div> -->
-
-
-                        <div class="industry-main-content-wrapper text-white d-flex flex-column gap-3 gap-md-5">
-
-                            <div class="industry-head-text">
-                                <h3>
-                                    INDUSTRY</h3>
-                            </div>
-
-
-
-                            <div class="industry-main-head-text">
-                                <p>Our <br>
-                                    Partners</p>
-                            </div>
-
-
-                            <div class="industry-para">
-                                <p>Click here to add your own content and customize the text. This is a great place to
-                                    tell a story about your company and let your users know a little more about the
-                                    company's history, the team's background, or any other information you'd like to
-                                    share. Just click "Edit Text" to get started.</p>
-                            </div>
-
-
-
-
-
-                        </div>
-
-
-                    </div>
-                </div>
-
-
-
-                <div class="col-md-6  logo-coloum  d-flex align-items-center justify-content-center">
-
-
-                    <div class="logo-parent d-flex flex-column gap-5">
-
-
-                        <div class="logo-sub-parent d-flex gap-5">
-
-                            <div class="logo ">
-
-                                <div class="logo-image">
-
-
-                                    <img
-                                        src="https://static.wixstatic.com/media/c837a6_a8508672733a4bb7ba100662952d4f6f~mv2.png/v1/fill/w_140,h_140,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/General_Transport.png">
-
-                                </div>
-
-                                <div class="logo-content">
-                                    GENERAL TRANSPORT
-                                </div>
-
-                            </div>
-
-                            <div class="logo ">
-
-                                <div class="logo-image">
-
-                                    <img
-                                        src="https://static.wixstatic.com/media/c837a6_24669e1d20cd4f079fd2ea5e253c99b8~mv2.png/v1/fill/w_88,h_64,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/IDI_Software.png">
-
-                                </div>
-
-                                <div class="logo-content">
-                                    IDI SOFTWARE
-                                </div>
-
-                            </div>
-                        </div>
-
-
-                        <div class="logo-sub-parent d-flex gap-5">
-                            <div class="logo ">
-
-                                <div class="logo-image">
-                                    <img
-                                        src="https://static.wixstatic.com/media/c837a6_db1c6e9c1b95497f81465ccd218fa048~mv2.png/v1/fill/w_88,h_80,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Imogen_Cars.png">
-                                </div>
-
-                                <div class="logo-content">IMOGEN CARS</div>
-
-                            </div>
-
-
-                            <div class="logo  ">
-
-
-
-                                <div class="logo-image">
-                                    <img
-                                        src="https://static.wixstatic.com/media/c837a6_81bc98e386764170adbb3e97cc7e1655~mv2.png/v1/fill/w_128,h_64,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Tri-Nex%20.png">
-                                </div>
-
-
-                                <div class="logo-content">
-                                    TRI-NEX
-                                </div>
-
-
-                            </div>
-                        </div>
-
-
-
-
-
-
-                    </div>
-
-
-
-
-                </div>
-
-
-            </div>
-
-
-        </div>
-
-    </section>
-
-
-
-    <hr style="margin: 0px;">
-
-
-
-
-     <div class="container-fluid py-5 bg-black text-white">
+ 
+    <div class="container-fluid py-5 bg-black text-white">
  
         <div class="row align-items-center py-5">
  
@@ -931,97 +151,28 @@
         </div>
  
     </div>
-
-
-
-
-  <footer class="footer-autono bg-light py-md-5">
-    <div class="container-fluid text-black">
-
-      <!-- Row 1: Links + Contact and Subscribe -->
-      <div class="row mt-7rem">
-        <!-- Left col-md-6 col-12: Links + Contact -->
-        <div class="col-12 col-md-6 mb-4 d-flex justify-content-center">
-          <div class="d-flex flex-column flex-md-row align-items-start justify-content-center gap-5">
-
-            <!-- Links -->
-            <div class="d-flex flex-column gap-3rem">
-              <h5 class="fw-bold mb-3">AUTONO</h5>
-              <div><a href="https://www.wix.com/demone2/autono/technology" class="footer-link ">Technology</a>
-              </div>
-              <div><a href="https://www.wix.com/demone2/autono/about" class="footer-link ">About</a></div>
-              <div><a href="https://www.wix.com/demone2/autono/careers" class="footer-link ">Careers</a></div>
-            </div>
-
-            <!-- Contact -->
-            <div class="d-flex flex-column gap-3rem mt-90px text-black ">
-              <div class="fw-medium">Tel: 123-456-7890</div>
-              <div class="fw-medium">Email: <a href="mailto:info@mysite.com" class="footer-link ">info@mysite.com</a></div>
-              <div class="fw-medium ">500 Terry Francine St<br class="fw-medium">San Francisco, CA 94158</div>
-            </div>
-
-          </div>
-        </div>
-
-        <!-- Right col-md-6 col-12: Subscribe form -->
-        <div class="col-12 col-md-6 mb-4 d-flex justify-content-center align-items-center">
-          <div class="d-flex flex-column gap-3 w-100 subscribe-box">
-            <!-- Title -->
-            <h5 class="mb-2 subscribe fw-medium">SUBSCRIBE</h5>
-            <!-- Description -->
-            <p class="mb-3 fw-medium">Sign up to receive Autono news and updates.</p>
-            <!-- Form -->
-            <form class="d-flex flex-column gap-3">
-              <label for="subscribeEmail" class="form-label mb-0 fw-medium">Email*</label>
-              <div class="d-flex flex-row gap-2 align-items-end">
-                <input type="email" id="subscribeEmail" class="form-control footer-input border-1 border-black"
-                  required>
-                <button type="submit" class="btn bg-black text-white btn-dark fw-semibold px-4 fw-medium">Subscribe</button>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input border border-1 border-black" type="checkbox" id="subscribeConsent"
-                  required>
-                <label class="form-check-label fw-medium" for="subscribeConsent">
-                  Yes, subscribe me to your newsletter.*
-                </label>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Divider -->
-
-
-    <!-- Row 2: Copyright + Icons -->
-    <div class="row align-items-center">
-      <div class="col-12 col-md-5   icons text-black ">
-        © 2035 by Autono. Powered and secured by
-        <a href="https://wix.com/?utm_campaign=vir_created_with" class="footer-link text-decoration-underline">Wix</a>
-      </div>
-      <div class="col-12 col-md-5 d-flex justify-content-md-end align-items-center mt-3 m-md-4 p-md-3">
-        <a href="#" class="footer-icon me-5 "><i class="bi bi-linkedin text-black"></i></a>
-        <a href="#" class="footer-icon me-5"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="footer-icon me-5"><i class="bi bi-twitter"></i></a>
-        <a href="#" class="footer-icon"><i class="bi bi-instagram"></i></a>
-      </div>
-    </div>
-  </footer>
-
-
-
-
+ 
+    <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
  
-
-
+    <!-- 3. Correct Bootstrap JS Link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-
-    <script src="./index.js"></script>
-
+ 
+    <script>
+        $(document).ready(function () {
+            $('.your-class').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 1,
+                adaptiveHeight: true,
+                autoplay: true,
+                arrows: false
+            });
+        });
+    </script>
+ 
 </body>
-
+ 
 </html>
